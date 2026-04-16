@@ -102,8 +102,6 @@ http://localhost:3000/workspace
 	•	👤 User authentication
 	•	📤 Export designs (2D + 3D)
 
-⸻
-
 💡 Vision
 
 NextWave Design Studio is building a new category of software:
