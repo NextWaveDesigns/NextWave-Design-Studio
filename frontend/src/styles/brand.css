@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #0A1A2F;
+  --color-blue: #0077FF;
+  --color-teal: #00C2B8;
+  --color-gold: #FF8A00;
+
+  --color-white: #F5F7FA;
+  --color-gray: #A0AEC0;
+
+  --gradient-brand: linear-gradient(
+    135deg,
+    #0077FF,
+    #00C2B8,
+    #FF8A00
+  );
+}
