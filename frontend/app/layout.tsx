@@ -16,10 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        {/* GLOBAL HEADER */}
         <header style={styles.header}>
           <Link href="/" style={styles.logoWrap}>
-            <Image src="/logo.png" alt="NWDS Logo" width={40} height={40} />
+            <Image src="/logo.svg" alt="NWDS Logo" width={40} height={40} />
             <span style={styles.logoText}>NWDS</span>
           </Link>
         </header>
