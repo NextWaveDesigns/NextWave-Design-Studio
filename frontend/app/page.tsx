@@ -3,17 +3,21 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main style={styles.container}>
-      
-      <header style={styles.header}>
-        <div style={styles.logoWrap}>
-          <Image src="/logo.png" alt="NWDS Logo" width={40} height={40} />
-          <span style={styles.logoText}>NWDS</span>
-        </div>
-      </header>
+    <main style={styles.overlay}>
 
+      {/* HERO */}
       <section style={styles.hero}>
+
+        <Image
+          src="/logo.png"
+          alt="NWDS Logo"
+          width={80}
+          height={80}
+          style={styles.heroLogo}
+        />
+
         <h1 style={styles.title}>NextWave Design Studio</h1>
+
         <p style={styles.subtitle}>
           AI-powered interior design for smarter spaces
         </p>
@@ -23,24 +27,25 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* FURNITURE GRID */}
       <section style={styles.grid}>
         <div style={styles.card}>
-          <Image src="/chair.png" alt="Chair" width={200} height={200} />
+          <Image src="/chair.png" alt="Chair" width={120} height={120} />
           <p>Chairs</p>
         </div>
 
         <div style={styles.card}>
-          <Image src="/table.png" alt="Table" width={200} height={200} />
+          <Image src="/table.png" alt="Table" width={120} height={120} />
           <p>Tables</p>
         </div>
 
         <div style={styles.card}>
-          <Image src="/sofa.png" alt="Sofa" width={200} height={200} />
+          <Image src="/sofa.png" alt="Sofa" width={120} height={120} />
           <p>Sofas</p>
         </div>
 
         <div style={styles.card}>
-          <Image src="/door.png" alt="Door" width={200} height={200} />
+          <Image src="/door.png" alt="Door" width={120} height={120} />
           <p>Doors</p>
         </div>
       </section>
@@ -50,27 +55,18 @@ export default function Home() {
 }
 
 const styles = {
-  container: {
-    fontFamily: "Arial",
+  overlay: {
+    minHeight: "100vh",
+    backdropFilter: "blur(2px)",
+    background: "rgba(255,255,255,0.85)",
     padding: 20
-  },
-  header: {
-    display: "flex",
-    alignItems: "center",
-    marginBottom: 40
-  },
-  logoWrap: {
-    display: "flex",
-    alignItems: "center",
-    gap: 10
-  },
-  logoText: {
-    fontSize: "18px",
-    fontWeight: "bold"
   },
   hero: {
     textAlign: "center" as const,
     marginBottom: 60
+  },
+  heroLogo: {
+    marginBottom: 20
   },
   title: {
     fontSize: "42px",
@@ -83,7 +79,6 @@ const styles = {
   },
   button: {
     padding: "12px 24px",
-    fontSize: "16px",
     background: "#0ea5e9",
     color: "white",
     border: "none",
@@ -92,13 +87,13 @@ const styles = {
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
     gap: 20
   },
   card: {
     textAlign: "center" as const,
     padding: 20,
-    border: "1px solid #eee",
+    background: "white",
     borderRadius: 10
   }
 };
