@@ -5,11 +5,10 @@ export default function Home() {
   return (
     <main style={styles.overlay}>
 
-      {/* HERO */}
       <section style={styles.hero}>
 
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           alt="NWDS Logo"
           width={80}
           height={80}
@@ -27,29 +26,6 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* FURNITURE GRID */}
-      <section style={styles.grid}>
-        <div style={styles.card}>
-          <Image src="/chair.png" alt="Chair" width={120} height={120} />
-          <p>Chairs</p>
-        </div>
-
-        <div style={styles.card}>
-          <Image src="/table.png" alt="Table" width={120} height={120} />
-          <p>Tables</p>
-        </div>
-
-        <div style={styles.card}>
-          <Image src="/sofa.png" alt="Sofa" width={120} height={120} />
-          <p>Sofas</p>
-        </div>
-
-        <div style={styles.card}>
-          <Image src="/door.png" alt="Door" width={120} height={120} />
-          <p>Doors</p>
-        </div>
-      </section>
-
     </main>
   );
 }
@@ -57,7 +33,6 @@ export default function Home() {
 const styles = {
   overlay: {
     minHeight: "100vh",
-    backdropFilter: "blur(2px)",
     background: "rgba(255,255,255,0.85)",
     padding: 20
   },
@@ -82,18 +57,6 @@ const styles = {
     background: "#0ea5e9",
     color: "white",
     border: "none",
-    borderRadius: 6,
-    cursor: "pointer"
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-    gap: 20
-  },
-  card: {
-    textAlign: "center" as const,
-    padding: 20,
-    background: "white",
-    borderRadius: 10
+    borderRadius: 6
   }
 };
