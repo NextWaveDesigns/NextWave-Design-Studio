@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+
+  /* DESIGN BACKGROUND */
+  background-image:
+    url("/chair.png"),
+    url("/table.png"),
+    url("/sofa.png"),
+    url("/ruler.png"),
+    url("/pencil.png");
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-position:
+    5% 20%,
+    90% 30%,
+    10% 80%,
+    85% 75%,
+    50% 10%;
+
+  background-size:
+    80px,
+    100px,
+    120px,
+    70px,
+    60px;
+
+  opacity: 1;
+}
