@@ -1,6 +1,7 @@
 # NextWave Design Studio
 
-AI-powered design workspace for generating and visualizing interior layouts in real-time.
+AI-powered design workspace for generating 
+and visualizing interior layouts in real-time.
 
 ## 🚀 Features
 - AI-generated design layouts
@@ -24,7 +25,8 @@ npm run dev
 
 AI-Powered 2D & 3D Design Workspace for Intelligent Space Creation
 
-NextWave Design Studio transforms simple text prompts into fully visualized layouts using both a real-time 2D canvas engine and an evolving 3D spatial engine.
+NextWave Design Studio transforms simple text prompts into fully 
+visualized layouts using both a real-time 2D canvas engine and an evolving 3D spatial engine.
 
 This is where AI, layout intelligence, and immersive design come together.
 
