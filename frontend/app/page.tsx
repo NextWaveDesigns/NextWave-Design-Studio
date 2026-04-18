@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main style={styles.overlay}>
 
-      {/* HERO */}
+      {/* HERO (PNG LOGO) */}
       <section style={styles.hero}>
 
         <Image
@@ -25,6 +25,29 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* FEATURE GRID */}
+      <section style={styles.grid}>
+        <div style={styles.card}>
+          <Image src="/chair.png" alt="Chair" width={120} height={120} />
+          <p>Chairs</p>
+        </div>
+
+        <div style={styles.card}>
+          <Image src="/table.png" alt="Table" width={120} height={120} />
+          <p>Tables</p>
+        </div>
+
+        <div style={styles.card}>
+          <Image src="/sofa.png" alt="Sofa" width={120} height={120} />
+          <p>Sofas</p>
+        </div>
+
+        <div style={styles.card}>
+          <Image src="/door.png" alt="Door" width={120} height={120} />
+          <p>Doors</p>
+        </div>
+      </section>
+
     </main>
   );
 }
@@ -33,13 +56,11 @@ const styles = {
   overlay: {
     minHeight: "100vh",
     background: "rgba(255,255,255,0.9)",
-    padding: 20,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
+    padding: 20
   },
   hero: {
-    textAlign: "center" as const
+    textAlign: "center" as const,
+    marginBottom: 60
   },
   heroLogo: {
     marginBottom: 20
@@ -57,5 +78,16 @@ const styles = {
     border: "none",
     borderRadius: 8,
     cursor: "pointer"
+  },
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+    gap: 20
+  },
+  card: {
+    textAlign: "center" as const,
+    padding: 20,
+    background: "white",
+    borderRadius: 10
   }
 };
