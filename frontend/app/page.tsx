@@ -5,17 +5,16 @@ export default function Home() {
   return (
     <main style={styles.overlay}>
 
+      {/* HERO */}
       <section style={styles.hero}>
 
         <Image
-          src="/logo.svg"
+          src="/logo-full.png"
           alt="NWDS Logo"
-          width={80}
-          height={80}
+          width={320}
+          height={160}
           style={styles.heroLogo}
         />
-
-        <h1 style={styles.title}>NextWave Design Studio</h1>
 
         <p style={styles.subtitle}>
           AI-powered interior design for smarter spaces
@@ -33,19 +32,17 @@ export default function Home() {
 const styles = {
   overlay: {
     minHeight: "100vh",
-    background: "rgba(255,255,255,0.85)",
-    padding: 20
+    background: "rgba(255,255,255,0.9)",
+    padding: 20,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   },
   hero: {
-    textAlign: "center" as const,
-    marginBottom: 60
+    textAlign: "center" as const
   },
   heroLogo: {
     marginBottom: 20
-  },
-  title: {
-    fontSize: "42px",
-    marginBottom: 10
   },
   subtitle: {
     fontSize: "18px",
@@ -53,10 +50,12 @@ const styles = {
     marginBottom: 20
   },
   button: {
-    padding: "12px 24px",
+    padding: "14px 28px",
+    fontSize: "16px",
     background: "#0ea5e9",
     color: "white",
     border: "none",
-    borderRadius: 6
+    borderRadius: 8,
+    cursor: "pointer"
   }
 };
